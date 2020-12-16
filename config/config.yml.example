@@ -40,9 +40,9 @@ jobs:
       UPLOAD_TIME: 5 # 每次上传阅读时长（单位分钟）
       MAX_READ_TIME: 600 # 每日最大阅读时长（单位分钟）
       ACCOUNTS:
-        - HEADERS:
-          BODY:
-          BOOK_URL:
+        - HEADERS:{"ywsession":"982fm4rfy9ae8be70qy2syqwpw8x4b9b","Cookie":"ywguid=415838562;ywkey=ywDXObk7lNmk;platform=android;channel=mqqmina;mpVersion=0.34.4;qq_ver=8.4.18.4945;os_ver=Android 10;mpos_ver=1.21.0;platform=android;openid=4DC2FF474C8DC4DCC0C282F151277D80","Connection":"keep-alive","Content-Type":"application/json","Accept":"*/*","Host":"mqqapi.reader.qq.com","User-Agent":"Mozilla%2F5.0+%28Linux%3B+Android+10%3B+Redmi+K20+Pro+Premium+Edition+Build%2FQKQ1.190825.002%3B+wv%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Version%2F4.0+Chrome%2F87.0.4280.101+Mobile+Safari%2F537.36 QQ/8.4.18.4945 V1_AND_SQ_8.4.18_1558_YYB_D QQ/MiniApp","Referer":"https://appservice.qq.com/1110657249/0.34.4/page-frame.html","Accept-Language":"zh-cn","Accept-Encoding":"gzip, deflate, br","mpversion":"0.34.4"}
+          BODY:{"common":{"appid":1450024393,"areaid":5,"qq_ver":"8.4.18.4945","os_ver":"Android 10","mp_ver":"0.34.4","mpos_ver":"1.21.0","brand":"Xiaomi","model":"Redmi K20 Pro Premium Edition","screenWidth":393,"screenHeight":804,"windowWidth":393,"windowHeight":750,"openid":"4DC2FF474C8DC4DCC0C282F151277D80","guid":415838562,"session":"982fm4rfy9ae8be70qy2syqwpw8x4b9b","scene":3001,"source":-1,"hasRedDot":"false","missions":-1,"caseID":-1},"dataList":[{"click1":"bookShelf_myshelf_myBook_C","click2":"promoPopwin_close_C","route":"pages/book-read/index","refer":"pages/book-shelf/index","options":{"bid":"14174819","cid":"2","from":"shelf"},"dis":1608117475757,"ext6":41,"eventID":"bookRead_cus_customize_I","type":"shown","bid":"14174819","bookStatus":1,"bookPay":1,"from":"bookShelf_myshelf_myBook_C_0_14174819"}]}
+          BOOK_URL:https://mqqapi.reader.qq.com/mqq/addReadTimeWithBid?scene=3001&refer=-1&bid=14174819&readTime=20426&read_type=0&conttype=1&read_status=0&chapter_info=%5B%7B%222%22%3A%7B%22readTime%22%3A20426%2C%22pay_status%22%3A0%7D%7D%5D&sp=-1
           WITHDRAW: false # 默认不启用提现功能，启用前必须保证账号已经实名认证（模式：满额提现，每天23点以后开始尝试提现，每次提现10元，不满10元不提现，不使用2元和1元提现次数）
           HOSTING_MODE: false # 默认不启用托管提现，若启用则必须在 WITHDRAW 为 true 下才有效（模式：托管提现，建议放弃薅此羊毛时候打开，将使用剩余的2元和1元提现次数将剩余金币最大程度转化为rmb）
   bilibili:
